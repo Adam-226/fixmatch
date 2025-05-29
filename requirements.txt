@@ -1,0 +1,21 @@
+# FixMatch半监督学习项目依赖包
+# 核心深度学习框架
+torch>=1.4.0
+torchvision>=0.5.0
+
+# 数据处理和科学计算
+numpy>=1.18.0
+Pillow>=7.0.0
+
+# 训练工具和可视化
+tqdm>=4.45.0
+tensorboard>=2.2.0
+
+# 配置文件支持
+PyYAML>=5.3.0
+
+# 可选依赖（用于混合精度训练，需要NVIDIA GPU）
+# apex  # 取消注释以启用混合精度训练
+
+# Python标准库（无需安装）
+# argparse, logging, math, os, random, shutil, time, collections, copy 

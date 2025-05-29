@@ -1,0 +1,33 @@
+# CIFAR-10 with 40 labeled samples configuration
+# Auto-resume: Training will automatically resume from the last checkpoint if available
+# Checkpoint location: results/cifar10@40/checkpoint.pth.tar
+
+dataset: cifar10
+num_labeled: 40
+arch: wideresnet
+batch_size: 64
+lr: 0.03
+expand_labels: true
+seed: 5
+out: results/cifar10@40
+
+# Default parameters (can be overridden)
+gpu_id: 0
+num_workers: 4
+total_steps: 1048576  # 2^20
+eval_step: 1024
+start_epoch: 0
+warmup: 0
+wdecay: 0.0005
+nesterov: true
+use_ema: true
+ema_decay: 0.999
+mu: 7
+lambda_u: 1.0
+T: 1.0
+threshold: 0.95
+resume: ""  # Leave empty for auto-resume functionality
+amp: false
+opt_level: "O1"
+local_rank: -1
+no_progress: false 
